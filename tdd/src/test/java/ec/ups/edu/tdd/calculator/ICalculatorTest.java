@@ -15,8 +15,8 @@ public class ICalculatorTest {
     @Test
     public void give_two_integers_when_addition_then_ok() {
         ICalculator iCalculator= Mockito.mock(ICalculator.class);
-        Mockito.when(calculator.addition(2,3)).thenReturn(0);//.thenReturn(7);
-        assertEquals(7, calculator.addition(2,3));
+        Mockito.when(iCalculator.addition(2,3)).thenReturn(5);//.thenReturn(7);
+        assertEquals(5, iCalculator.addition(2,3));
     }
 
 }

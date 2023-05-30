@@ -16,7 +16,7 @@ public class CalculatorTest {
     }
     @AfterClass
     public static void tearDownClass(){
-        System.out.println("setUpClass()");
+        System.out.println("tearDownClass()");
     }
     @Test
     public void given_two_integer_when_addition_then_ok(){
@@ -46,6 +46,8 @@ public class CalculatorTest {
     public void tearDown(){
         System.out.println("tearDown()");
         calculator.setAns(0);
+        calculator=null;
     }
+
 
 }
