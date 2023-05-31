@@ -19,7 +19,6 @@ public class CalculatorParametersTest {
         this.b = b;
         this.expected = expected;
     }
-
     @Parameterized.Parameters
     public static List<Object[]> parameters() {
         return Arrays.asList(
@@ -31,7 +30,6 @@ public class CalculatorParametersTest {
                 new Object[]{12, 14, 26}
         );
     }
-
     @Test
     public void given_parameters_when_addition_then_ok() {
         Calculator calculator = new Calculator();

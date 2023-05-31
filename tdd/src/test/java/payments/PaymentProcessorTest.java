@@ -18,21 +18,15 @@ public class PaymentProcessorTest {
 
     @Test
     public void give_payment_when_is_correct_then_ok() {
-        //PaymentGateway paymentGateway= Mockito.mock(PaymentGateway.class);
-        //PaymentProcessor paymentProcessor=new PaymentProcessor(paymentGateway);
         Mockito.when(paymentGateway.requestPayment(Mockito.any()))
                 .thenReturn(new PaymentResponse(PaymentResponse.PaymentStatus.OK));
-
         assertTrue(paymentProcessor.makePayment(100));
     }
 
     @Test
     public void give_payment_when_is_wrong_then_error() {
-        //PaymentGateway paymentGateway= Mockito.mock(PaymentGateway.class);
-        //PaymentProcessor paymentProcessor=new PaymentProcessor(paymentGateway);
         Mockito.when(paymentGateway.requestPayment(Mockito.any()))
                 .thenReturn(new PaymentResponse(PaymentResponse.PaymentStatus.ERROR));
-
         assertFalse(paymentProcessor.makePayment(100));
     }
 }
