@@ -1,0 +1,6 @@
+org\ejemplo\SSRFExampleApplication.class
+org\example\SSRFVulnerable.class
+org\ejemplo\MitigatedImageController.class
+org\ejemplo\MitigatedSSRFExampleApplication.class
+org\ejemplo\ImageController.class
+org\example\SSRFMitigatedExample.class
