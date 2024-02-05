@@ -1,0 +1,13 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:root:url: https://testsafebrowsing.appspot.com/s/unwanted.html
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatMatches:find?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 273
+INFO:root:Amenaza encontrada: {'matches': [{'threatType': 'UNWANTED_SOFTWARE', 'platformType': 'ANY_PLATFORM', 'threat': {'url': 'https://testsafebrowsing.appspot.com/s/unwanted.html'}, 'cacheDuration': '300s', 'threatEntryType': 'URL'}]}
+INFO:werkzeug:127.0.0.1 - - [04/Feb/2024 23:03:59] "POST /buscar_amenazas HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\config.py', reloading
+INFO:werkzeug: * Restarting with stat
