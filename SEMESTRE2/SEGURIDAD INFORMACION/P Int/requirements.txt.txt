@@ -1,3 +1,5 @@
 pip install Flask
 pip install google-safe-browsing no
 pip install pysafebrowsing
+pip install bcrypt
+pip install pymongo
