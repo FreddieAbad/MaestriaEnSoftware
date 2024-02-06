@@ -1,6 +1,7 @@
 import os
 from config import API_KEY,USERDB, PASWDDB
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 import requests
 from pymongo import MongoClient
 from bson.objectid import ObjectId
@@ -9,6 +10,7 @@ from utils import hash_password, verify_password, buscar_amenazas, verificar_ip,
 import logging
 
 app = Flask(__name__)
+CORS(app) 
 API_KEY = os.getenv('API_KEY', API_KEY)
 USERDB = os.getenv('USERDB', USERDB)
 PASWDDB = os.getenv('PASWDDB', PASWDDB)

@@ -11,3 +11,123 @@ INFO:root:Amenaza encontrada: {'matches': [{'threatType': 'UNWANTED_SOFTWARE', '
 INFO:werkzeug:127.0.0.1 - - [04/Feb/2024 23:03:59] "POST /buscar_amenazas HTTP/1.1" 200 -
 INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\config.py', reloading
 INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:root:inicio exitoso
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 20:26:03] "POST /login HTTP/1.1" 200 -
+INFO:root:inicio exitoso
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:00:40] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:00:46] "OPTIONS /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:01:03] "OPTIONS /login HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:root:inicio exitoso
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:03:32] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:03:36] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:inicio exitoso
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:03:36] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:09:24] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:credenciales incorrectas
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:09:24] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:09:30] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:credenciales incorrectas
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:09:30] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+INFO:root:inicio exitoso
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:09:40] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:10:08] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:inicio exitoso
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:10:08] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:10:14] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:credenciales incorrectas
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:10:14] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:21:35] "OPTIONS /register HTTP/1.1" 200 -
+INFO:root:no hay parametros de entrada
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:21:35] "[31m[1mPOST /register HTTP/1.1[0m" 400 -
+INFO:root:usuario ya existe
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:22:01] "[31m[1mPOST /register HTTP/1.1[0m" 400 -
+INFO:root:resultado InsertOneResult(ObjectId('65c197cf81f29cc7ac1ce43b'), acknowledged=True)
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:22:07] "[35m[1mPOST /register HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:23:25] "OPTIONS /register HTTP/1.1" 200 -
+INFO:root:no hay parametros de entrada
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:23:25] "[31m[1mPOST /register HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:24:07] "OPTIONS /register HTTP/1.1" 200 -
+INFO:root:no hay parametros de entrada
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:24:07] "[31m[1mPOST /register HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:24:44] "OPTIONS /register HTTP/1.1" 200 -
+INFO:root:no hay parametros de entrada
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:24:44] "[31m[1mPOST /register HTTP/1.1[0m" 400 -
+INFO:root:no hay parametros de entrada
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:24:48] "[31m[1mPOST /register HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:28:23] "OPTIONS /register HTTP/1.1" 200 -
+INFO:root:no hay parametros de entrada
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:28:23] "[31m[1mPOST /register HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:30:42] "OPTIONS /register HTTP/1.1" 200 -
+INFO:root:resultado InsertOneResult(ObjectId('65c199d381f29cc7ac1ce43c'), acknowledged=True)
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:30:43] "[35m[1mPOST /register HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:38:47] "OPTIONS /register HTTP/1.1" 200 -
+INFO:root:resultado InsertOneResult(ObjectId('65c19bb781f29cc7ac1ce43d'), acknowledged=True)
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:38:48] "[35m[1mPOST /register HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:44:49] "OPTIONS /register HTTP/1.1" 200 -
+INFO:root:resultado InsertOneResult(ObjectId('65c19d2181f29cc7ac1ce43e'), acknowledged=True)
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:44:49] "[35m[1mPOST /register HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:48:23] "OPTIONS /register HTTP/1.1" 200 -
+INFO:root:no hay parametros de entrada
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:48:23] "[31m[1mPOST /register HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:48:31] "OPTIONS /register HTTP/1.1" 200 -
+INFO:root:resultado InsertOneResult(ObjectId('65c19e0081f29cc7ac1ce43f'), acknowledged=True)
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:48:32] "[35m[1mPOST /register HTTP/1.1[0m" 201 -
+INFO:root:inicio exitoso
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 21:55:14] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:14:00] "OPTIONS /buscar_amenazas HTTP/1.1" 200 -
+INFO:root:url: https://testsafebrowsing.appspot.com/s/unwanted.html
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatMatches:find?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 273
+INFO:root:Amenaza encontrada: {'matches': [{'threatType': 'UNWANTED_SOFTWARE', 'platformType': 'ANY_PLATFORM', 'threat': {'url': 'https://testsafebrowsing.appspot.com/s/unwanted.html'}, 'cacheDuration': '300s', 'threatEntryType': 'URL'}]}
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:14:01] "POST /buscar_amenazas HTTP/1.1" 200 -
+INFO:root:url: https://testsafebrowsing.appspot.com/s/unwanted.html
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatMatches:find?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 273
+INFO:root:Amenaza encontrada: {'matches': [{'threatType': 'UNWANTED_SOFTWARE', 'platformType': 'ANY_PLATFORM', 'threat': {'url': 'https://testsafebrowsing.appspot.com/s/unwanted.html'}, 'cacheDuration': '300s', 'threatEntryType': 'URL'}]}
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:14:09] "POST /buscar_amenazas HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:15:19] "OPTIONS /buscar_amenazas HTTP/1.1" 200 -
+INFO:root:url: https://testsafebrowsing.appspot.com/s/unwanted.html
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatMatches:find?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 273
+INFO:root:Amenaza encontrada: {'matches': [{'threatType': 'UNWANTED_SOFTWARE', 'platformType': 'ANY_PLATFORM', 'threat': {'url': 'https://testsafebrowsing.appspot.com/s/unwanted.html'}, 'cacheDuration': '300s', 'threatEntryType': 'URL'}]}
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:15:20] "POST /buscar_amenazas HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:17:48] "OPTIONS /buscar_amenazas HTTP/1.1" 200 -
+INFO:root:url: https://testsafebrowsing.appspot.com/s/unwanted.html
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatMatches:find?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 273
+INFO:root:Amenaza encontrada: {'matches': [{'threatType': 'UNWANTED_SOFTWARE', 'platformType': 'ANY_PLATFORM', 'threat': {'url': 'https://testsafebrowsing.appspot.com/s/unwanted.html'}, 'cacheDuration': '300s', 'threatEntryType': 'URL'}]}
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:17:49] "POST /buscar_amenazas HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:19:37] "OPTIONS /buscar_amenazas HTTP/1.1" 200 -
+INFO:root:url: https://testsafebrowsing.appspot.com/s/unwanted.html
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatMatches:find?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 273
+INFO:root:Amenaza encontrada: {'matches': [{'threatType': 'UNWANTED_SOFTWARE', 'platformType': 'ANY_PLATFORM', 'threat': {'url': 'https://testsafebrowsing.appspot.com/s/unwanted.html'}, 'cacheDuration': '300s', 'threatEntryType': 'URL'}]}
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:19:38] "POST /buscar_amenazas HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:27:05] "OPTIONS /register HTTP/1.1" 200 -
+INFO:root:resultado InsertOneResult(ObjectId('65c1a70981f29cc7ac1ce440'), acknowledged=True)
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:27:05] "[35m[1mPOST /register HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:27:35] "OPTIONS /register HTTP/1.1" 200 -
+INFO:root:resultado InsertOneResult(ObjectId('65c1a72781f29cc7ac1ce441'), acknowledged=True)
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:27:35] "[35m[1mPOST /register HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:28:49] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:inicio exitoso
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:28:49] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:29:28] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:credenciales incorrectas
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:29:29] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\config.py', reloading
+INFO:werkzeug: * Restarting with stat
