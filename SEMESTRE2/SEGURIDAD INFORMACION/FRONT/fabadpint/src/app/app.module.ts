@@ -9,13 +9,15 @@ import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SignupComponent } from './signup/signup.component';
 import { HomeauthComponent } from './homeauth/homeauth.component';
+import { ConfigurepyscanComponent } from './configurepyscan/configurepyscan.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SignupComponent,
-    HomeauthComponent
+    HomeauthComponent,
+    ConfigurepyscanComponent
   ],
   imports: [
     BrowserModule,

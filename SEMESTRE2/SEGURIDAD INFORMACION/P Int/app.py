@@ -1,17 +1,21 @@
 import os
-from config import API_KEY,USERDB, PASWDDB
-from flask import Flask, jsonify, request
+from config import API_KEY,USERDB, PASWDDB, API_KEY_VIRUSTOTAL
+from flask import Flask, jsonify, request, send_file
 from flask_cors import CORS
 import requests
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 import bcrypt
-from utils import hash_password, verify_password, buscar_amenazas, verificar_ip, calcular_sha256, comprobar_archivo_gs
+from utils import hash_password, verify_password, buscar_amenazas,  calcular_sha256, comprobar_archivo_gs, allowed_file
 import logging
+import csv
+import json
+from io import StringIO, BytesIO
 
 app = Flask(__name__)
 CORS(app) 
 API_KEY = os.getenv('API_KEY', API_KEY)
+API_KEY_VIRUSTOTAL = os.getenv('API_KEY_VIRUSTOTAL', API_KEY_VIRUSTOTAL)
 USERDB = os.getenv('USERDB', USERDB)
 PASWDDB = os.getenv('PASWDDB', PASWDDB)
 
@@ -20,18 +24,22 @@ client = MongoClient(uriDb)
 db = client['user_database']
 users_collection = db['users']
 
-# logging.basicConfig(
-#     filename='app.log',
-#     level=logging.DEBUG,
-#     format='%(asctime)s - %(levelname)s - %(message)s',
-#     datefmt='%Y-%m-%d %H:%M:%S.%f'
-# )
 
-
-# Configuración del sistema de logs
 logging.basicConfig(filename='app.log', level=logging.DEBUG)
 
-@app.route('/buscar_amenazas', methods=['POST'])
+
+
+@app.route('/gsb/listas_navegacion')
+def get_threat_lists():
+    url = f"https://safebrowsing.googleapis.com/v4/threatLists?key={API_KEY}"
+    response = requests.get(url)
+    if response.status_code == 200:
+        return jsonify(response.json())
+    else:
+        return jsonify({"error": "Error al obtener la lista de amenazas"}), response.status_code
+
+### SI SE QUEDA
+@app.route('/gsb/buscar_amenazas', methods=['POST'])
 def buscar_amenazas_endpoint():
     datos = request.get_json()
     url = datos.get('url')
@@ -49,8 +57,8 @@ def buscar_amenazas_endpoint():
         logging.info('EXCEPCION : %s', e)
 
         return jsonify({"error": str(e)}), 500
-
-@app.route('/verificar_ip', methods=['POST'])
+### si se queda
+@app.route('/ipinfo/verificar_ip', methods=['POST'])
 def verificar_ip_endpoint():
     datos = request.get_json()
     ip = datos.get('ip')
@@ -58,28 +66,30 @@ def verificar_ip_endpoint():
     if not ip:
         logging.info('No hay ip')
         return jsonify({"error": "Se requiere la dirección IP para verificar"}), 400
-
     try:
-        informacion_ip = verificar_ip(ip)
+        informacion_ip = requests.get(f'https://ipinfo.io/{ip}/json').json()
         logging.info('informacion_ip: %s', informacion_ip)
         return jsonify({"ip": ip, "informacion": informacion_ip})
     except Exception as e:
         logging.info('EXCEPCION : %s', e)
         return jsonify({"error": str(e)}), 500
 
+#no se queda
 @app.route('/comprobar_archivo', methods=['POST'])
 def comprobar_archivo_endpoint():
-    datos = request.get_json()
-    archivo = datos.get('archivo')
-    if not archivo:
+    # datos = request.get_json()
+    # archivo = datos.get('archivo')
+
+    file = request.files['archivo']
+    if not file:
         logging.info('No hay archivo')
         return jsonify({"error": "Se requiere el nombre del archivo para comprobar"}), 400
 
     try:
-        resultado_comprobacion = comprobar_archivo_gs(archivo, API_KEY)
+        resultado_comprobacion = comprobar_archivo_gs(file, API_KEY)
         logging.info('resultado_comprobacion: %s', resultado_comprobacion)
 
-        return jsonify({"archivo": archivo, "comprobacion": resultado_comprobacion})
+        return jsonify({"archivo": "archivo", "comprobacion": resultado_comprobacion})
     except Exception as e:
         logging.info('exce: %s', e)
 
@@ -97,13 +107,10 @@ def register_user():
         logging.info('no hay parametros de entrada')
 
         return jsonify({'code':'999', 'error': 'Faltan campos obligatorios'}), 400
-##refactorizar
     if not all([username, password, role, email]) or len(username) > 30 or len(role) > 30 or len(email) > 30 or len(password) > 30:
         logging.info('no cumple condiciones' )
         
         return jsonify({'code': '999', 'error': 'Campos no cumplen condiciones'}), 400
-#####
-
     hashed_password = hash_password(password)
 
     user = {
@@ -138,12 +145,10 @@ def login_user():
         logging.info('no hay datos entrada' )
 
         return jsonify({'code':'999', 'error': 'Faltan campos obligatorios'}), 400
-##refactorizar
     if not all([username, password]) or len(username) > 30 or len(password) > 30:
         logging.info('datos entrada no cumple condiciones' )
         
         return jsonify({'code': '999', 'error': 'Campos no cumplen condiciones'}), 400
-#####
     user = users_collection.find_one({'username': username})
     if user and verify_password(password, user['password']):
         logging.info('inicio exitoso' )
@@ -154,7 +159,106 @@ def login_user():
         
         return jsonify({'code':'999', 'error': 'Credenciales incorrectas'}), 401
 
+#se queda
+@app.route('/virus_total/consultar_ip', methods=['POST'])
+def consultar_ip_route():
+    ip = request.json.get('ip')
+    if ip:
+        resultado = consultar_ip(API_KEY_VIRUSTOTAL, ip)
+        if resultado:
+            return jsonify(resultado)
+        else:
+            return jsonify({"error": "No se pudo consultar la IP"}), 500
+    else:
+        return jsonify({"error": "Se requiere una dirección IP en el cuerpo de la solicitud"}), 400
 
+
+#se queda
+@app.route('/virus_total/consultar_archivo_ips', methods=['POST'])
+def consultar_ips_route():
+    if 'file' not in request.files:
+        return jsonify({"error": "No se proporcionó un archivo"}), 400
+    
+    file = request.files['file']
+    
+    if file.filename == '':
+        return jsonify({"error": "Nombre de archivo vacío"}), 400
+
+    if not allowed_file(file.filename):
+        return jsonify({"error": "Tipo de archivo no permitido. Solo se permiten archivos .txt"}), 400
+    ips = []
+    for line in file:
+        ip = line.decode().strip()
+        ips.append(ip)
+
+    resultados = []
+    for ip in ips:
+        resultado = consultar_ip(API_KEY_VIRUSTOTAL, ip)
+        if resultado:
+            propietario = resultado['data']['attributes'].get('as_owner', 'No disponible')
+            categoria = resultado['data']['attributes']['last_analysis_stats']
+            resultado_fila = [ip, propietario, categoria.get('malicious', 'No disponible'), categoria.get('suspicious', 'No disponible')]
+            resultados.append(resultado_fila)
+
+    output = StringIO()
+    archivo_csv = csv.writer(output)
+    cabeceras = ["IP", "Propietario", "Malicious", "Suspicious"]
+    archivo_csv.writerow(cabeceras)
+    archivo_csv.writerows(resultados)
+    output.seek(0)
+
+    output_bytes = BytesIO()
+    output_bytes.write(output.getvalue().encode())
+    output_bytes.seek(0)
+
+    return send_file(output_bytes, mimetype='text/csv', as_attachment=True, download_name='resultados.csv'), 200
+
+def consultar_ip(api_key, ip):
+    url = f"https://www.virustotal.com/api/v3/ip_addresses/{ip}"
+    headers = {
+        "x-apikey": api_key
+    }
+    response = requests.get(url, headers=headers)
+    print(response.json())
+
+    if response.status_code == 200:
+        resultado = response.json()
+        return resultado
+    else:
+        print(f"Error al consultar la IP {ip}. Código de estado: {response.status_code}")
+        return None
+
+def consulta_ip_file():
+    archivo_ips = "ips.txt"
+    resultados = []
+
+    with open(archivo_ips, "r") as file:
+        for linea in file:
+            ip = linea.strip()
+            resultado = consultar_ip(API_KEY_VIRUSTOTAL, ip)
+            if resultado:
+                print(resultado)
+                archivo_json = "resultados.json"
+
+                with open(archivo_json, "w") as file:
+                    json.dump(resultado, file, indent=4)
+
+                propietario = resultado['data']['attributes']['last_analysis_results']
+                categoria = resultado['data']['attributes']['last_analysis_stats']
+                resultado_fila = [ip, propietario, categoria['malicious'], categoria['suspicious']]
+                resultados.append(resultado_fila)
+                
+    archivo_csv = "resultados.csv"
+    cabeceras = ["IP", "Propietario", "Malicious", "Suspicious"]
+
+    with open(archivo_csv, "w", newline="") as file:
+        writer = csv.writer(file)
+        writer.writerow(cabeceras)
+        writer.writerows(resultados)
+
+    print("Los resultados se han guardado en el archivo 'resultados.csv'.")
+
+###############################
 
 if __name__ == '__main__':
     app.run(debug=True)

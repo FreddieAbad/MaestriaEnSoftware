@@ -131,3 +131,1149 @@ INFO:root:credenciales incorrectas
 INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:29:29] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
 INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\config.py', reloading
 INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:52:12] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:credenciales incorrectas
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:52:13] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+INFO:root:inicio exitoso
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:52:44] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:52:47] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:inicio exitoso
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 22:52:47] "POST /login HTTP/1.1" 200 -
+INFO:root:url: https://testsafebrowsing.appspot.com/s/unwanted.html
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatMatches:find?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 273
+INFO:root:Amenaza encontrada: {'matches': [{'threatType': 'UNWANTED_SOFTWARE', 'platformType': 'ANY_PLATFORM', 'threat': {'url': 'https://testsafebrowsing.appspot.com/s/unwanted.html'}, 'cacheDuration': '300s', 'threatEntryType': 'URL'}]}
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:02:50] "POST /buscar_amenazas HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:10:00] "[33mGET /listas_navegacion HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:11:00] "[33mGET /listas_navegacion HTTP/1.1[0m" 404 -
+INFO:root:url: https://testsafebrowsing.appspot.com/s/unwanted.html
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatMatches:find?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 273
+INFO:root:Amenaza encontrada: {'matches': [{'threatType': 'UNWANTED_SOFTWARE', 'platformType': 'ANY_PLATFORM', 'threat': {'url': 'https://testsafebrowsing.appspot.com/s/unwanted.html'}, 'cacheDuration': '300s', 'threatEntryType': 'URL'}]}
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:11:19] "POST /buscar_amenazas HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:root:url: https://testsafebrowsing.appspot.com/s/unwanted.html
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:12:19] "GET /listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatMatches:find?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 273
+INFO:root:Amenaza encontrada: {'matches': [{'threatType': 'UNWANTED_SOFTWARE', 'platformType': 'ANY_PLATFORM', 'threat': {'url': 'https://testsafebrowsing.appspot.com/s/unwanted.html'}, 'cacheDuration': '300s', 'threatEntryType': 'URL'}]}
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:12:19] "POST /buscar_amenazas HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:20:45] "GET /listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:20:45] "GET /listas_navegacion HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:20:45] "GET /listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:20:46] "GET /listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:20:52] "GET /listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:21:30] "GET /listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:21:31] "GET /listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:22:52] "GET /listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:22:53] "GET /listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:22:57] "GET /listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:24:44] "GET /listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:24:45] "GET /listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:24:53] "GET /listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:25:23] "GET /listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:25:24] "GET /listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:25:57] "GET /listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [05/Feb/2024 23:25:58] "GET /listas_navegacion HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\config.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 21:21:06] "[35m[1mPOST /virus_total/consultar_ip HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.224 HTTP/1.1" 401 100
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 21:22:53] "[35m[1mPOST /virus_total/consultar_ip HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.224 HTTP/1.1" 401 100
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 21:24:06] "[35m[1mPOST /virus_total/consultar_ip HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.224 HTTP/1.1" 401 100
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 21:24:50] "[35m[1mPOST /virus_total/consultar_ip HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.224 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 21:26:52] "POST /virus_total/consultar_ip HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\utils.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 21:30:37] "[31m[1mGET /verificar_ip HTTP/1.1[0m" 405 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 21:31:50] "[31m[1mGET /verificar_ip HTTP/1.1[0m" 405 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): ipinfo.io:443
+DEBUG:urllib3.connectionpool:https://ipinfo.io:443 "GET /209.99.40.224/json HTTP/1.1" 200 296
+INFO:root:informacion_ip: {'ip': '209.99.40.224', 'hostname': '209-99-40-224.fwd.datafoundry.com', 'city': 'Road Town', 'region': 'British Virgin Islands', 'country': 'VG', 'loc': '18.4269,-64.6208', 'org': 'AS3900 SWITCH, LTD', 'timezone': 'America/Tortola', 'readme': 'https://ipinfo.io/missingauth'}
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 21:32:28] "POST /verificar_ip HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/console.cloud.google.com HTTP/1.1" 404 None
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 21:34:59] "[35m[1mPOST /virus_total/consultar_ip HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 21:49:40] "[31m[1mPOST /virus_total/consultar_archivo_ips HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 21:50:15] "[31m[1mPOST /virus_total/consultar_archivo_ips HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 21:50:48] "[35m[1mPOST /virus_total/consultar_archivo_ips HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.219 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.220 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.223 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.224 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/173.193.105.243 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.108 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.221.40 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/50.17.195.149 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.121 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.120 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.109 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.122 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.110 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.118.197 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/173.192.117.66 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.224 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.113 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.222 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.223 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.220 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.118.201 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.118.200 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.118.203 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.118.202 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.118.205 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.118.204 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.118.207 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.118.206 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.118.209 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.118.208 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.221.53 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.114 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.115 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.116 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.117 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.118.195 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.111 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.112 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.118.196 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.118.199 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.118.198 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.118 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.119 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/212.7.217.117 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 21:52:01] "[35m[1mPOST /virus_total/consultar_archivo_ips HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.219 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.220 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.223 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.224 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/173.193.105.243 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.108 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.221.40 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/50.17.195.149 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.121 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 21:55:35] "[35m[1mPOST /virus_total/consultar_archivo_ips HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.219 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.220 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.223 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.224 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/173.193.105.243 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.108 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.221.40 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/50.17.195.149 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.121 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 21:57:36] "[35m[1mPOST /virus_total/consultar_archivo_ips HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.219 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.220 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.223 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.224 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/173.193.105.243 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.108 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.221.40 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/50.17.195.149 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.121 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:04:46] "[35m[1mPOST /virus_total/consultar_archivo_ips HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.219 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.220 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.223 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.224 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/173.193.105.243 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.108 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.221.40 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/50.17.195.149 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/87.119.222.121 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:08:39] "[35m[1mPOST /virus_total/consultar_archivo_ips HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.219 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.220 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.223 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:12:00] "[35m[1mPOST /virus_total/consultar_archivo_ips HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.219 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.220 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.223 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:12:09] "[35m[1mPOST /virus_total/consultar_archivo_ips HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.219 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.220 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.223 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:13:12] "[35m[1mPOST /virus_total/consultar_archivo_ips HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.219 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.220 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.223 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:15:26] "[35m[1mPOST /virus_total/consultar_archivo_ips HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.219 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.220 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.223 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:17:23] "[35m[1mPOST /virus_total/consultar_archivo_ips HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.219 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.220 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.223 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:19:09] "POST /virus_total/consultar_archivo_ips HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.219 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.220 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.223 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:27:04] "POST /virus_total/consultar_archivo_ips HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:27:20] "[31m[1mPOST /virus_total/consultar_archivo_ips HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\utils.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.219 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.220 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.223 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:28:47] "POST /virus_total/consultar_archivo_ips HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:30:36] "[31m[1mPOST /comprobar_archivo HTTP/1.1[0m" 415 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:32:49] "[35m[1mPOST /comprobar_archivo HTTP/1.1[0m" 500 -
+INFO:root:exce: expected str, bytes or os.PathLike object, not FileStorage
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:33:17] "[35m[1mPOST /comprobar_archivo HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:root:exce: expected str, bytes or os.PathLike object, not FileStorage
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:33:53] "[35m[1mPOST /comprobar_archivo HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\utils.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatListUpdates:fetch?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 400 441
+INFO:root:resultado_comprobacion: {'error': {'code': 400, 'message': 'Invalid JSON payload received. Unknown name "threatInfo": Cannot find field.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.BadRequest', 'fieldViolations': [{'description': 'Invalid JSON payload received. Unknown name "threatInfo": Cannot find field.'}]}]}}
+INFO:root:exce: name 'archivo' is not defined
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:37:09] "[35m[1mPOST /comprobar_archivo HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatListUpdates:fetch?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 400 441
+INFO:root:resultado_comprobacion: {'error': {'code': 400, 'message': 'Invalid JSON payload received. Unknown name "threatInfo": Cannot find field.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.BadRequest', 'fieldViolations': [{'description': 'Invalid JSON payload received. Unknown name "threatInfo": Cannot find field.'}]}]}}
+INFO:root:exce: name 'archivo' is not defined
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:38:05] "[35m[1mPOST /comprobar_archivo HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatListUpdates:fetch?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 400 441
+INFO:root:resultado_comprobacion: {'error': {'code': 400, 'message': 'Invalid JSON payload received. Unknown name "threatInfo": Cannot find field.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.BadRequest', 'fieldViolations': [{'description': 'Invalid JSON payload received. Unknown name "threatInfo": Cannot find field.'}]}]}}
+INFO:root:exce: name 'archivo' is not defined
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:38:09] "[35m[1mPOST /comprobar_archivo HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatListUpdates:fetch?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 400 441
+INFO:root:resultado_comprobacion: {'error': {'code': 400, 'message': 'Invalid JSON payload received. Unknown name "threatInfo": Cannot find field.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.BadRequest', 'fieldViolations': [{'description': 'Invalid JSON payload received. Unknown name "threatInfo": Cannot find field.'}]}]}}
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:39:30] "POST /comprobar_archivo HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:50:21] "[33mGET /listas_navegacion HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:50:22] "[33mGET /listas_navegacion HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:51:04] "[33mGET /listas_navegacion HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:51:04] "[33mGET /listas_navegacion HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:51:20] "[33mGET /listas_navegacion HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:51:20] "[33mGET /listas_navegacion HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:51:35] "[33mGET /gsb/listas_navegacion HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:51:35] "[33mGET /gsb/listas_navegacion HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:52:32] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:52:32] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:52:35] "OPTIONS /gsb/buscar_amenazas HTTP/1.1" 200 -
+INFO:root:url: https://testsafebrowsing.appspot.com/s/unwanted.html
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatMatches:find?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 273
+INFO:root:Amenaza encontrada: {'matches': [{'threatType': 'UNWANTED_SOFTWARE', 'platformType': 'ANY_PLATFORM', 'threat': {'url': 'https://testsafebrowsing.appspot.com/s/unwanted.html'}, 'cacheDuration': '300s', 'threatEntryType': 'URL'}]}
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:52:36] "POST /gsb/buscar_amenazas HTTP/1.1" 200 -
+INFO:root:url: https://testsafebrowsing.appspot.com/s/unwanted.html
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatMatches:find?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 273
+INFO:root:Amenaza encontrada: {'matches': [{'threatType': 'UNWANTED_SOFTWARE', 'platformType': 'ANY_PLATFORM', 'threat': {'url': 'https://testsafebrowsing.appspot.com/s/unwanted.html'}, 'cacheDuration': '300s', 'threatEntryType': 'URL'}]}
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:52:37] "POST /gsb/buscar_amenazas HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:52:39] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:52:45] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:52:49] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:53:24] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:53:33] "OPTIONS /gsb/buscar_amenazas HTTP/1.1" 200 -
+INFO:root:url: 
+INFO:root:No hay url
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:53:33] "[31m[1mPOST /gsb/buscar_amenazas HTTP/1.1[0m" 400 -
+INFO:root:url: https://testsafebrowsing.appspot.com/s/unwanted.html
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatMatches:find?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 273
+INFO:root:Amenaza encontrada: {'matches': [{'threatType': 'UNWANTED_SOFTWARE', 'platformType': 'ANY_PLATFORM', 'threat': {'url': 'https://testsafebrowsing.appspot.com/s/unwanted.html'}, 'cacheDuration': '300s', 'threatEntryType': 'URL'}]}
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:53:37] "POST /gsb/buscar_amenazas HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:59:27] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:59:27] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:59:28] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:59:53] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:59:53] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 22:59:53] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:00:30] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:00:30] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:00:31] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:00:58] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:00:58] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:00:58] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:01:24] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:01:24] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:01:25] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:01:32] "OPTIONS /gsb/buscar_amenazas HTTP/1.1" 200 -
+INFO:root:url: https://testsafebrowsing.appspot.com/s/unwanted.html
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatMatches:find?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 273
+INFO:root:Amenaza encontrada: {'matches': [{'threatType': 'UNWANTED_SOFTWARE', 'platformType': 'ANY_PLATFORM', 'threat': {'url': 'https://testsafebrowsing.appspot.com/s/unwanted.html'}, 'cacheDuration': '300s', 'threatEntryType': 'URL'}]}
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:01:33] "POST /gsb/buscar_amenazas HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:02:29] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:02:29] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:02:30] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:02:45] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:02:45] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:02:46] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:02:47] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:02:47] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:02:57] "OPTIONS /gsb/buscar_amenazas HTTP/1.1" 200 -
+INFO:root:url: https://testsafebrowsing.appspot.com/s/unwanted.html
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatMatches:find?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 273
+INFO:root:Amenaza encontrada: {'matches': [{'threatType': 'UNWANTED_SOFTWARE', 'platformType': 'ANY_PLATFORM', 'threat': {'url': 'https://testsafebrowsing.appspot.com/s/unwanted.html'}, 'cacheDuration': '300s', 'threatEntryType': 'URL'}]}
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:02:57] "POST /gsb/buscar_amenazas HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:03:40] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:03:40] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:03:41] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:03:50] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:03:50] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:03:51] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:04:17] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:04:17] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:04:18] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:04:27] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:04:27] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:04:28] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:04:41] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:04:41] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:04:42] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:05:26] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:05:26] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:05:27] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:05:41] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:05:41] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:05:42] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:05:43] "OPTIONS /gsb/buscar_amenazas HTTP/1.1" 200 -
+INFO:root:url: https://testsafebrowsing.appspot.com/s/unwanted.html
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatMatches:find?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 273
+INFO:root:Amenaza encontrada: {'matches': [{'threatType': 'UNWANTED_SOFTWARE', 'platformType': 'ANY_PLATFORM', 'threat': {'url': 'https://testsafebrowsing.appspot.com/s/unwanted.html'}, 'cacheDuration': '300s', 'threatEntryType': 'URL'}]}
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:05:44] "POST /gsb/buscar_amenazas HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:06:10] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:06:10] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:06:11] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:06:15] "OPTIONS /gsb/buscar_amenazas HTTP/1.1" 200 -
+INFO:root:url: https://testsafebrowsing.appspot.com/s/unwanted.html
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatMatches:find?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 273
+INFO:root:Amenaza encontrada: {'matches': [{'threatType': 'UNWANTED_SOFTWARE', 'platformType': 'ANY_PLATFORM', 'threat': {'url': 'https://testsafebrowsing.appspot.com/s/unwanted.html'}, 'cacheDuration': '300s', 'threatEntryType': 'URL'}]}
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:06:15] "POST /gsb/buscar_amenazas HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:06:52] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:06:52] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:06:53] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:07:06] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:07:06] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:07:07] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:07:15] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:07:15] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:07:16] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:07:32] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:07:32] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:07:33] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:07:43] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:07:43] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:07:43] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:07:46] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:07:46] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:07:47] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:08:38] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:08:38] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:08:39] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:09:07] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:09:07] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:09:08] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:11:07] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:11:07] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:11:08] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:12:46] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:12:46] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:12:47] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:12:51] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:13:56] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:14:01] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:15:03] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:15:33] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:16:27] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:16:48] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:16:53] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:17:34] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:17:37] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:17:50] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:18:29] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:19:39] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:20:48] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:21:11] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:22:14] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:22:35] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:27:47] "[33mPOST /verificar_ip HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:28:23] "[33mPOST /ipinfo/verificar_ip HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:29:10] "[33mPOST /ipinfo/verificar_ip HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): ipinfo.io:443
+DEBUG:urllib3.connectionpool:https://ipinfo.io:443 "GET /209.99.40.224/json HTTP/1.1" 200 296
+INFO:root:informacion_ip: {'ip': '209.99.40.224', 'hostname': '209-99-40-224.fwd.datafoundry.com', 'city': 'Road Town', 'region': 'British Virgin Islands', 'country': 'VG', 'loc': '18.4269,-64.6208', 'org': 'AS3900 SWITCH, LTD', 'timezone': 'America/Tortola', 'readme': 'https://ipinfo.io/missingauth'}
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:29:35] "POST /ipinfo/verificar_ip HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:31:50] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:31:50] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:31:50] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:31:50] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:31:54] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:31:58] "OPTIONS /ipinfo/verificar_ip HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): ipinfo.io:443
+DEBUG:urllib3.connectionpool:https://ipinfo.io:443 "GET /DFASDFASD/json HTTP/1.1" 404 113
+INFO:root:informacion_ip: {'status': 404, 'error': {'title': 'Wrong ip', 'message': 'Please provide a valid IP address'}}
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:31:59] "POST /ipinfo/verificar_ip HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:32:17] "OPTIONS /ipinfo/verificar_ip HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): ipinfo.io:443
+DEBUG:urllib3.connectionpool:https://ipinfo.io:443 "GET /209.99.40.224/json HTTP/1.1" 200 296
+INFO:root:informacion_ip: {'ip': '209.99.40.224', 'hostname': '209-99-40-224.fwd.datafoundry.com', 'city': 'Road Town', 'region': 'British Virgin Islands', 'country': 'VG', 'loc': '18.4269,-64.6208', 'org': 'AS3900 SWITCH, LTD', 'timezone': 'America/Tortola', 'readme': 'https://ipinfo.io/missingauth'}
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:32:17] "POST /ipinfo/verificar_ip HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:32:51] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:32:51] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:32:53] "OPTIONS /ipinfo/verificar_ip HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): ipinfo.io:443
+DEBUG:urllib3.connectionpool:https://ipinfo.io:443 "GET /dfasdfasd/json HTTP/1.1" 404 113
+INFO:root:informacion_ip: {'status': 404, 'error': {'title': 'Wrong ip', 'message': 'Please provide a valid IP address'}}
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:32:54] "POST /ipinfo/verificar_ip HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:33:08] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:33:08] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:34:46] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:34:46] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:34:46] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:34:46] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:34:58] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:34:58] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:35:09] "OPTIONS /ipinfo/verificar_ip HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): ipinfo.io:443
+DEBUG:urllib3.connectionpool:https://ipinfo.io:443 "GET /209.99.40.224/json HTTP/1.1" 200 296
+INFO:root:informacion_ip: {'ip': '209.99.40.224', 'hostname': '209-99-40-224.fwd.datafoundry.com', 'city': 'Road Town', 'region': 'British Virgin Islands', 'country': 'VG', 'loc': '18.4269,-64.6208', 'org': 'AS3900 SWITCH, LTD', 'timezone': 'America/Tortola', 'readme': 'https://ipinfo.io/missingauth'}
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:35:10] "POST /ipinfo/verificar_ip HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.224 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:37:33] "POST /virus_total/consultar_ip HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:42:14] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:42:14] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:42:14] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:42:14] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:42:20] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:42:36] "OPTIONS /ipinfo/verificar_ip HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): ipinfo.io:443
+DEBUG:urllib3.connectionpool:https://ipinfo.io:443 "GET /209.99.40.224/json HTTP/1.1" 200 296
+INFO:root:informacion_ip: {'ip': '209.99.40.224', 'hostname': '209-99-40-224.fwd.datafoundry.com', 'city': 'Road Town', 'region': 'British Virgin Islands', 'country': 'VG', 'loc': '18.4269,-64.6208', 'org': 'AS3900 SWITCH, LTD', 'timezone': 'America/Tortola', 'readme': 'https://ipinfo.io/missingauth'}
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:42:37] "POST /ipinfo/verificar_ip HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:44:15] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:44:15] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:44:51] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:46:05] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:46:05] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:46:05] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:46:05] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:46:38] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:46:38] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:46:41] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:46:49] "OPTIONS /virus_total/consultar_ip HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.224 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:46:50] "POST /virus_total/consultar_ip HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:47:18] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:47:18] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:50:30] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:50:30] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:50:40] "OPTIONS /ipinfo/verificar_ip HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): ipinfo.io:443
+DEBUG:urllib3.connectionpool:https://ipinfo.io:443 "GET /209.99.40.224/json HTTP/1.1" 200 296
+INFO:root:informacion_ip: {'ip': '209.99.40.224', 'hostname': '209-99-40-224.fwd.datafoundry.com', 'city': 'Road Town', 'region': 'British Virgin Islands', 'country': 'VG', 'loc': '18.4269,-64.6208', 'org': 'AS3900 SWITCH, LTD', 'timezone': 'America/Tortola', 'readme': 'https://ipinfo.io/missingauth'}
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:50:41] "POST /ipinfo/verificar_ip HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:50:43] "OPTIONS /virus_total/consultar_ip HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.224 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [06/Feb/2024 23:50:44] "POST /virus_total/consultar_ip HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD INFORMACION\\P Int\\config.py', reloading
+INFO:werkzeug: * Restarting with stat

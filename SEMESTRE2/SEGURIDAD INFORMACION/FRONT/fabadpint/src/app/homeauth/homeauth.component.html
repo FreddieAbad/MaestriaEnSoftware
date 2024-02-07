@@ -1,18 +1,55 @@
+<div class="container" style="margin-bottom: 2%;">
+  <div class="row justify-content-center">
+    <div class="col-md-9">
+      <br>
+      <h2 style="text-align: center;">Escaneo de Amenazas</h2>
+      <hr>
+      <div *ngIf="threatLists" id="listadoNavegacion">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Resultado de Amenazas Google Safe Browsing</h5>
+            <p>
+              A continuación se consume un servicio de Google Safe Browsing:
+              https://safebrowsing.googleapis.com/v4/threatLists
+              de enumeración las listas de amenazas de la Navegación segura que están disponibles para descargar.
+            </p>
+            <ul class="list-group">
+              <li class="list-group-item" *ngFor="let list of threatLists">
+                <p>Plataforma: {{ list.platformType }}
+                  <br>
+                  Tipo de entrada de amenaza: {{ list.threatEntryType }}
+                  <br>
+                  Tipo de amenaza: {{ list.threatType }}
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>
+
 <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <h2>Escaneo de Amenazas</h2>
-        <form (ngSubmit)="escanearAmenazas()">
+  <div class="row">
+    <div class="col-md-9">
+      <h5 class="card-title">Resultado de Escaneo Google Safe Browsing</h5>
+      <p>
+        A continuación se consume un servicio de Google Safe Browsing:
+        https://safebrowsing.googleapis.com/v4/threatMatches:find
+        que busca las entradas de amenazas que coinciden con las listas de Navegación segura.
+      </p>
+
+      <div *ngIf="response" id="escaneoAmenaza">
+        <form (ngSubmit)="escanearAmenazas()" style="margin-bottom: 5%;">
           <div class="mb-3">
-            <label for="url" class="form-label">URL:</label>
+            <label for="url" class="form-label">Escaneo de URL:</label>
             <input type="text" id="url" name="url" [(ngModel)]="url" class="form-control" required>
           </div>
           <button type="submit" class="btn btn-primary">Escanear</button>
         </form>
-      </div>
-    </div>
-    <div class="row justify-content-center mt-4">
-      <div class="col-md-6" *ngIf="response">
+
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Resultado del escaneo Google Safe Browsing </h5>
@@ -33,4 +70,118 @@
       </div>
     </div>
   </div>
-  
+</div>
+
+
+
+<!-- <div class="container">
+  <hr>
+  <div class="row">
+    <div class="col-md-9">
+      <h5 class="card-title">Resultado de Escaneo IP IPINFO.IO</h5>
+      <p>
+        A continuación se consume un servicio de IPINFO
+      </p>
+    </div>
+  </div>
+</div> -->
+<div class="container">
+  <hr>
+  <div class="row">
+    <div class="col-md-9">
+      <h5 class="card-title">Resultado de Escaneo IP IPINFO.IO</h5>
+      <p>A continuación se consume un servicio de IPINFO</p>
+      <form (ngSubmit)="verificarIP()">
+        <div class="mb-3">
+          <label for="ipInput" class="form-label">Ingrese una dirección IP:</label>
+          <input type="text" id="ipInput" name="ipInput" [(ngModel)]="ipInput" class="form-control" required pattern="{{ ipv4Pattern }}">
+        </div>
+        <button type="submit" class="btn btn-primary">Verificar IP</button>
+      </form>
+      <div *ngIf="ipInfo">
+        <h5>Información de la IP:</h5>
+        <p>IP: {{ ipInfo.ip }}</p>
+        <p>City: {{ ipInfo.informacion.city }}</p>
+        <p>Country: {{ ipInfo.informacion.country }}</p>
+        <p>Hostname: {{ ipInfo.informacion.hostname }}</p>
+        <p>Location: {{ ipInfo.informacion.loc }}</p>
+        <p>Organization: {{ ipInfo.informacion.org }}</p>
+        <p>Region: {{ ipInfo.informacion.region }}</p>
+        <p>Timezone: {{ ipInfo.informacion.timezone }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="container">
+  <hr>
+  <div class="row">
+    <div class="col-md-9">
+      <h5 class="card-title">Resultado de Escaneo DE IP VIRUS TOTAL</h5>
+      <p>
+        A continuación se consume un servicio de VIRUS TOTAL
+      </p>
+    </div>
+  </div>
+</div> -->
+<!-- <div class="container">
+  <hr>
+  <div class="row">
+    <div class="col-md-9">
+      <h5 class="card-title">Resultado de Escaneo DE IP VIRUS TOTAL</h5>
+      <p>
+        A continuación se consume un servicio de VIRUS TOTAL
+      </p>
+      <div *ngIf="ipInfo">
+        <p>IP Consultada: {{ ipInfo.id }}</p>
+        <p>Asociación propietaria: {{ ipInfo.data.attributes.as_owner }}</p>
+        <p>ASN: {{ ipInfo.data.attributes.asn }}</p>
+        <p>Continente: {{ ipInfo.data.attributes.continent }}</p>
+        <p>País: {{ ipInfo.data.attributes.country }}</p>
+        <p>Fecha del último análisis: {{ convertUnixTimestamp(ipInfo.data.attributes.last_analysis_date) | date }}</p>
+        <p>Resultado del último análisis: {{ getLastAnalysisResult(ipInfo.data.attributes.last_analysis_results) }}</p>
+    
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="container">
+  <hr>
+  <div class="row">
+    <div class="col-md-9">
+      <h5 class="card-title">Resultado de Escaneo DE IP VIRUS TOTAL</h5>
+      <p>A continuación se consume un servicio de VIRUS TOTAL</p>
+      <form (ngSubmit)="verificarIP_VT()">
+        <div class="form-group">
+          <label for="ipInputVT">Ingrese una dirección IP:</label>
+          <input type="text" class="form-control" id="ipInputVT" [(ngModel)]="ipInputVT" name="ipInputVT" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Consultar IP</button>
+      </form>
+      <div *ngIf="ipInfoVT">
+        <p>IP Consultada: {{ ipInfoVT.id }}</p>
+        <p>Asociación propietaria: {{ ipInfoVT.data.attributes.as_owner }}</p>
+        <p>ASN: {{ ipInfoVT.data.attributes.asn }}</p>
+        <p>Continente: {{ ipInfoVT.data.attributes.continent }}</p>
+        <p>País: {{ ipInfoVT.data.attributes.country }}</p>
+        <p>Fecha del último análisis: {{ convertUnixTimestamp(ipInfoVT.data.attributes.last_analysis_date) | date }}</p>
+        <p>Resultado del último análisis: {{ getLastAnalysisResult(ipInfoVT.data.attributes.last_analysis_results) }}</p>
+        <!-- Mostrar más detalles según sea necesario -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <hr>
+  <div class="row">
+    <div class="col-md-9">
+      <h5 class="card-title">Resultado de Escaneo ARCHIVO DE VARIAS IP VIRUS TOTAL</h5>
+      <p>
+        A continuación se consume un servicio de VIRUS TOTAL
+      </p>
+    </div>
+  </div>
+</div>

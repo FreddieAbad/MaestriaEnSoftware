@@ -20,15 +20,24 @@ def buscar_amenazas(url, API_KEY):
     response = requests.post(api_url, json=payload)
     return response.json()
 
-def verificar_ip(ip):
-    response = requests.get(f'https://ipinfo.io/{ip}/json')
-    return response.json()
+# def verificar_ip(ip):
+#     response = requests.get(f'https://ipinfo.io/{ip}/json')
+#     return response.json()
+
+# def calcular_sha256(archivo):
+#     sha256 = hashlib.sha256()
+#     with open(archivo, "rb") as f:
+#         for bloque in iter(lambda: f.read(4096), b""):
+#             sha256.update(bloque)
+#     return sha256.hexdigest()
 
 def calcular_sha256(archivo):
     sha256 = hashlib.sha256()
-    with open(archivo, "rb") as f:
-        for bloque in iter(lambda: f.read(4096), b""):
-            sha256.update(bloque)
+    while True:
+        data = archivo.read(65536)  # Lee 64KB a la vez
+        if not data:
+            break
+        sha256.update(data)
     return sha256.hexdigest()
 
 def comprobar_archivo_gs(archivo,API_KEY):
@@ -55,3 +64,8 @@ def hash_password(password):
 
 def verify_password(plain_password, hashed_password):
     return bcrypt.checkpw(plain_password.encode('utf-8'), hashed_password)
+
+ALLOWED_EXTENSIONS = {'txt'}
+
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
