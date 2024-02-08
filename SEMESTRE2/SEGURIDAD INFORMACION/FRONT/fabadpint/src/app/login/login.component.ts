@@ -31,7 +31,7 @@ export class LoginComponent {
   }
 
   goToHomeAuthPage() {
-    this.router.navigateByUrl('/homeauth');
+    this.router.navigateByUrl('/configurepyscan');
   }
 
   goToSignUpPage() {

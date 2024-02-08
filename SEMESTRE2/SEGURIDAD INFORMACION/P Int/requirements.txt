@@ -1,0 +1,7 @@
+Flask
+google-safe-browsing no
+pysafebrowsing
+bcrypt
+pymongo
+flask-cors
+cryptography

@@ -1,5 +1,5 @@
 import os
-from config import API_KEY,USERDB, PASWDDB, API_KEY_VIRUSTOTAL
+from config import API_KEY,USERDB, PASWDDB, API_KEY_VIRUSTOTAL, URLDB
 from flask import Flask, jsonify, request, send_file
 from flask_cors import CORS
 import requests
@@ -12,20 +12,68 @@ import csv
 import json
 from io import StringIO, BytesIO
 
+from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
+from cryptography.hazmat.backends import default_backend
+from cryptography.hazmat.primitives import padding
+from base64 import b64encode, b64decode
+
+
+
 app = Flask(__name__)
 CORS(app) 
+
+
+
+
+
+def encrypt_AES256(key, data):
+    assert len(key) == 32, "La clave AES debe tener 32 bytes"
+    iv = os.urandom(16)
+    cipher = Cipher(algorithms.AES(key), modes.CBC(iv), backend=default_backend())
+    encryptor = cipher.encryptor()
+    padder = padding.PKCS7(128).padder()
+    padded_data = padder.update(data) + padder.finalize()
+    ciphertext = encryptor.update(padded_data) + encryptor.finalize()
+    return b64encode(iv + ciphertext)
+
+def decrypt_AES256(encrypted_data):
+    key = b':\x9b\xb0W\x0b}\x06]\xd0gxX$2\xc8\xed\x0b\x9fN\xcb3L;8\xd3%:5\x94\x10\xcf\xa5'
+    assert len(key) == 32, "La clave AES debe tener 32 bytes"
+    encrypted_data = b64decode(encrypted_data)
+    iv = encrypted_data[:16]
+    ciphertext = encrypted_data[16:]
+    cipher = Cipher(algorithms.AES(key), modes.CBC(iv), backend=default_backend())
+    decryptor = cipher.decryptor()
+    decrypted_data = decryptor.update(ciphertext) + decryptor.finalize()
+    unpadder = padding.PKCS7(128).unpadder()
+    unpadded_data = unpadder.update(decrypted_data) + unpadder.finalize()
+    return unpadded_data
+    
 API_KEY = os.getenv('API_KEY', API_KEY)
 API_KEY_VIRUSTOTAL = os.getenv('API_KEY_VIRUSTOTAL', API_KEY_VIRUSTOTAL)
 USERDB = os.getenv('USERDB', USERDB)
 PASWDDB = os.getenv('PASWDDB', PASWDDB)
+URLDB = os.getenv('URLDB', URLDB)
 
-uriDb ='mongodb+srv://'+USERDB+':'+PASWDDB+'@cluster0.nrrtvh8.mongodb.net/?retryWrites=true&w=majority'
+API_KEY = decrypt_AES256(API_KEY)
+API_KEY_VIRUSTOTAL = decrypt_AES256(API_KEY_VIRUSTOTAL)
+USERDB = decrypt_AES256(USERDB)
+PASWDDB = decrypt_AES256(PASWDDB)
+URLDB = decrypt_AES256(URLDB)
+
+API_KEY = API_KEY.decode('utf-8')
+API_KEY_VIRUSTOTAL = API_KEY_VIRUSTOTAL.decode('utf-8')
+USERDB = USERDB.decode('utf-8')
+PASWDDB = PASWDDB.decode('utf-8')
+URLDB = URLDB.decode('utf-8')
+
+uriDb ='mongodb+srv://'+USERDB+':'+PASWDDB+'@'+URLDB+'/?retryWrites=true&w=majority'
 client = MongoClient(uriDb)
 db = client['user_database']
 users_collection = db['users']
 
 
-logging.basicConfig(filename='app.log', level=logging.DEBUG)
+logging.basicConfig(filename='app.log', encoding='utf-8', level=logging.DEBUG)
 
 
 

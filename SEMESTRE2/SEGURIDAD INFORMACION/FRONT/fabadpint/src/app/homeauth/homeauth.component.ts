@@ -180,9 +180,7 @@ export class HomeauthComponent {
         }
       );
   }
-  goToSignUpPage() {
-    this.router.navigateByUrl('/signup');
-  }
+  
   goToLoginPage() {
     this.router.navigateByUrl('/');
   }
