@@ -28,7 +28,6 @@
     "express": "^4.18.2",
     "file-saver": "^2.0.5",
     "jquery": "^3.7.1",
-    "ngx-openlayers": "^0.8.22",
     "ngx-spinner": "^16.0.2",
     "ngx-toastr": "^18.0.0",
     "rxjs": "~7.8.0",
