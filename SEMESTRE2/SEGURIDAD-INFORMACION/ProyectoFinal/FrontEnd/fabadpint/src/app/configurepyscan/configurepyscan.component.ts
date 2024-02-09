@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { API_URL_GETUSERS } from '../config';
 
 @Component({
   selector: 'app-configurepyscan',
@@ -12,6 +13,26 @@ export class ConfigurepyscanComponent {
 
   goToSignUpPage() {
     this.router.navigateByUrl('/signup');
+  }
+  goToHomeAuth() {
+    this.router.navigateByUrl('/homeauth');
+  }
+  users: any[] = [];
+
+
+  ngOnInit(): void {
+    this.http.get<any>(API_URL_GETUSERS).subscribe(
+      data => {
+        if (data.code === '200') {
+          this.users = data.users;
+        } else {
+          console.error('Error retrieving users:', data.message);
+        }
+      },
+      error => {
+        console.error('Error fetching users:', error);
+      }
+    );
   }
 
 }

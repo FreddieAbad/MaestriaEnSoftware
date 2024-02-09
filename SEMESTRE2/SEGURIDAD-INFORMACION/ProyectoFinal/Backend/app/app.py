@@ -179,8 +179,27 @@ def register_user():
 
     return jsonify({'code':'000', 'message': 'Usuario registrado exitosamente', 'id': str(result.inserted_id)}), 201
 
+from flask import Response, json
 
+def json_response(data, status_code):
+    """
+    Serialize the data to JSON and construct a Flask Response with the specified status code.
+    """
+    return Response(
+        response=json.dumps(data, default=str),  # Use default=str to handle non-serializable types
+        status=status_code,
+        mimetype='application/json'
+    )
 
+@app.route('/get_users', methods=['GET'])
+def get_users():
+    users = users_collection.find({}, {'_id': False})  # Exclude _id field from the response
+    user_list = list(users)
+    if not user_list:
+        return json_response({'code': '404', 'message': 'No se encontraron usuarios'}, 404)
+    for user in user_list:
+        user.pop('password', None)
+    return json_response({'code': '200', 'users': user_list}, 200)
 
 # Función para autenticar un usuario
 @app.route('/login', methods=['POST'])

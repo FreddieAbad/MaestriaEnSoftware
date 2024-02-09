@@ -171,3 +171,152 @@ INFO:werkzeug:[33mPress CTRL+C to quit[0m
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:17:36] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:credenciales incorrectas
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:17:38] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+INFO:root:inicio exitoso
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:17:41] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD-INFORMACION\\ProyectoFinal\\Backend\\app\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:20:39] "[35m[1mGET /get_users HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:21:28] "[35m[1mGET /get_users HTTP/1.1[0m" 500 -
+INFO:root:inicio exitoso
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:21:54] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD-INFORMACION\\ProyectoFinal\\Backend\\app\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:23:27] "[35m[1mGET /get_users HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD-INFORMACION\\ProyectoFinal\\Backend\\app\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:24:28] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Fred\\Desktop\\SI Master\\Versionar\\MaestriaEnSoftware\\SEMESTRE2\\SEGURIDAD-INFORMACION\\ProyectoFinal\\Backend\\app\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:26:11] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:28:36] "[33mGET /users HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:28:37] "[33mGET /users HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:28:43] "[33mGET /users HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:28:44] "[33mGET /users HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:29:02] "[33mGET /get?users HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:29:03] "[33mGET /get?users HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:29:06] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:29:09] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:29:25] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:30:26] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:31:18] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:31:34] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:32:07] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:34:45] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:36:22] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:37:20] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:37:36] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:37:54] "GET /get_users HTTP/1.1" 200 -
+INFO:root:url: https://www.malwaredomainlist.com/
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatMatches:find?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3
+INFO:root:Amenaza encontrada: {}
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:38:36] "POST /gsb/buscar_amenazas HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:39:38] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:39:39] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:40:10] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:40:56] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:41:01] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:41:34] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:41:36] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:42:29] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Feb/2024 23:53:08] "GET /get_users HTTP/1.1" 200 -
+INFO:root:url: https://www.malwaredomainlist.com/
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatMatches:find?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3
+INFO:root:Amenaza encontrada: {}
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:06:39] "POST /gsb/buscar_amenazas HTTP/1.1" 200 -
+INFO:root:url: https://www.malwaredomainlist.com/FDFADF)&/&/
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatMatches:find?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3
+INFO:root:Amenaza encontrada: {}
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:06:57] "POST /gsb/buscar_amenazas HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:07:34] "GET /get_users HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:12:02] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:12:49] "OPTIONS /gsb/buscar_amenazas HTTP/1.1" 200 -
+INFO:root:url: https://testsafebrowsing.appspot.com/s/phishing.html
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "POST /v4/threatMatches:find?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 274
+INFO:root:Amenaza encontrada: {'matches': [{'threatType': 'SOCIAL_ENGINEERING', 'platformType': 'ANY_PLATFORM', 'threat': {'url': 'https://testsafebrowsing.appspot.com/s/phishing.html'}, 'cacheDuration': '300s', 'threatEntryType': 'URL'}]}
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:12:50] "POST /gsb/buscar_amenazas HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:13:20] "OPTIONS /ipinfo/verificar_ip HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): ipinfo.io:443
+DEBUG:urllib3.connectionpool:https://ipinfo.io:443 "GET /209.99.40.219/json HTTP/1.1" 200 296
+INFO:root:informacion_ip: {'ip': '209.99.40.219', 'hostname': '209-99-40-219.fwd.datafoundry.com', 'city': 'Road Town', 'region': 'British Virgin Islands', 'country': 'VG', 'loc': '18.4269,-64.6208', 'org': 'AS3900 SWITCH, LTD', 'timezone': 'America/Tortola', 'readme': 'https://ipinfo.io/missingauth'}
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:13:21] "POST /ipinfo/verificar_ip HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:13:44] "OPTIONS /ipinfo/verificar_ip HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): ipinfo.io:443
+DEBUG:urllib3.connectionpool:https://ipinfo.io:443 "GET /78.138.126.223/json HTTP/1.1" 200 270
+INFO:root:informacion_ip: {'ip': '78.138.126.223', 'city': 'Strasbourg', 'region': 'Grand Est', 'country': 'FR', 'loc': '48.5839,7.7455', 'org': 'AS29066 velia.net Internetdienste GmbH', 'postal': '67000', 'timezone': 'Europe/Paris', 'readme': 'https://ipinfo.io/missingauth'}
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:13:45] "POST /ipinfo/verificar_ip HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:14:22] "OPTIONS /virus_total/consultar_ip HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.219 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:14:23] "POST /virus_total/consultar_ip HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:14:53] "OPTIONS /virus_total/consultar_ip HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.223 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:14:54] "POST /virus_total/consultar_ip HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/209.99.40.219 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.220 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.virustotal.com:443
+DEBUG:urllib3.connectionpool:https://www.virustotal.com:443 "GET /api/v3/ip_addresses/78.138.126.223 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:16:06] "POST /virus_total/consultar_archivo_ips HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:16:31] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:inicio exitoso
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:16:32] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:16:32] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:16:47] "OPTIONS /register HTTP/1.1" 200 -
+INFO:root:resultado InsertOneResult(ObjectId('65c5b53f887c5e909f3fe31b'), acknowledged=True)
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:16:47] "[35m[1mPOST /register HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:16:54] "OPTIONS /login HTTP/1.1" 200 -
+INFO:root:inicio exitoso
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:16:54] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 00:16:55] "GET /get_users HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 605-144-416
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): safebrowsing.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://safebrowsing.googleapis.com:443 "GET /v4/threatLists?key=AIzaSyAE7j8IWquf72ha9XGDs06bqDDyOoxuLe8 HTTP/1.1" 200 3766
+INFO:werkzeug:127.0.0.1 - - [09/Feb/2024 01:23:26] "GET /gsb/listas_navegacion HTTP/1.1" 200 -
