@@ -1,0 +1,12 @@
+version: '3.1'
+services:
+  micro-integrator:
+    image: wso2/wso2mi:4.0.0
+    ports:
+      - "8290:8290"
+      - "8253:8253"
+      - "9164:9164"
+  mi-dashboard:
+    image: wso2/wso2mi-dashboard:4.0.0
+    ports:
+      - "9743:9743"

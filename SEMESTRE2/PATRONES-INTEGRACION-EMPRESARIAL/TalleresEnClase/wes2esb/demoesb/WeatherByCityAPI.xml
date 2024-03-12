@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/weather" name="WeatherByCity" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <property name="uri.var.appid" scope="default" type="STRING" value="2eab84a73e8f916a40ec8848ee473b89"/>
+            <iterate expression="json-eval($.cities)" id="cities">
+                <target>
+                    <sequence>
+                        <property expression="json-eval($.name)" name="uri.var.city" scope="default" type="STRING"/>
+                        <send>
+                            <endpoint>
+                                <http method="get" uri-template="http://api.openweathermap.org/data/2.5/weather?q={uri.var.city}&amp;appid={uri.var.appid}">
+                                    <suspendOnFailure>
+                                        <initialDuration>-1</initialDuration>
+                                        <progressionFactor>-1</progressionFactor>
+                                        <maximumDuration>0</maximumDuration>
+                                    </suspendOnFailure>
+                                    <markForSuspension>
+                                        <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                                    </markForSuspension>
+                                </http>
+                            </endpoint>
+                        </send>
+                    </sequence>
+                </target>
+            </iterate>
+        </inSequence>
+        <outSequence>
+            <aggregate id="cities">
+                <completeCondition>
+                    <messageCount max="-1" min="-1"/>
+                </completeCondition>
+                <onComplete expression="json-eval($)">
+                    <send/>
+                </onComplete>
+            </aggregate>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>
