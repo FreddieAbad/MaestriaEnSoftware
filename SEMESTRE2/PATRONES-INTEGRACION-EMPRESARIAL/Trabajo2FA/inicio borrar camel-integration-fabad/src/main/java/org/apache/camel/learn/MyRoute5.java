@@ -1,10 +1,8 @@
-
 package org.apache.camel.learn;
 
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.dataformat.bindy.csv.BindyCsvDataFormat;
 import org.apache.camel.spi.DataFormat;
-import org.apache.camel.builder.PredicateBuilder;
 
 
 public class MyRoute5 extends RouteBuilder {
@@ -15,18 +13,15 @@ public class MyRoute5 extends RouteBuilder {
     public void configure() throws Exception {
 
         from("file:src/datos?noop=True&fileName=cardsclients.csv&delay=50000")
+                //from("file:src/datos?move=.done&moveFailed=.error&fileName=cardsclients.csv")
                 .split().tokenize("\n")
                 .filter(body().isNotNull())
                 .unmarshal(bindy)
                 .process(new PersonaProcesor())
-                .choice()
-                .when(PredicateBuilder.and(header("pagos").isEqualTo(false), header("bills").isEqualTo(false)))
-                        .to("direct:procesarInsert")
-                .end();
-
-
-        from("direct:procesarInsert")
-                .process(new InsertProcesor())
-                .to("log:FIN");
+                //.to("jdbc:myDataSource")
+                .to("log:PERSONAS")
+               // .to("jdbc:dataSource")
+//                .to("jdbc:dataSource?useHeaderAsParameters=true&resetAutoCommit=false&outputType=SelectOne")
+                ;
     }
 }

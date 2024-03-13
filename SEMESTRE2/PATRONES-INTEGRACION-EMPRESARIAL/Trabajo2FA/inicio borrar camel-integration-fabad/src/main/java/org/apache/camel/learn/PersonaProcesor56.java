@@ -1,4 +1,3 @@
-/*
 package org.apache.camel.learn;
 
 import org.apache.camel.Exchange;
@@ -9,8 +8,7 @@ import javax.sql.DataSource;
 
 public class PersonaProcesor56 implements Processor {
 
-    */
-/*public PersonaProcesor() throws Exception {
+    /*public PersonaProcesor() throws Exception {
             SimpleRegistry registry = new SimpleRegistry();
             DataSource dataSource = setupDatasource("jdbc:postgresql://localhost:5432/postgres");
             registry.bind("myDataSource", dataSource);
@@ -64,8 +62,7 @@ public class PersonaProcesor56 implements Processor {
             Thread.sleep(2000);
             context.stop();
 
-    }*//*
-
+    }*/
 
     @Override
     public void process(Exchange exchange) throws Exception {
@@ -84,8 +81,7 @@ public class PersonaProcesor56 implements Processor {
         }
 
     }
-   */
-/* public static void conexion2DB(Persona persona) {
+   /* public static void conexion2DB(Persona persona) {
         String urljdbc = "jdbc:postgresql://localhost:5432/postgres";
         DataSource dataSource = setupDatasource(urljdbc);
         DefaultRegistry registry = new DefaultRegistry();
@@ -120,8 +116,7 @@ public class PersonaProcesor56 implements Processor {
         }
         context.stop();
     }
-    *//*
-
+    */
    public static DataSource setupDatasource (String jdbcUrl){
         BasicDataSource ds = new BasicDataSource();
         ds.setDriverClassName("org.postgresql.Driver");
@@ -131,36 +126,25 @@ public class PersonaProcesor56 implements Processor {
         return ds;
     }
     public static boolean isAnyPayLessOrEqualZero(Persona persona) {
-        */
-/*if (persona.getPAY_1() <= 0 ||
+        if (persona.getPAY_1() <= 0 ||
                 persona.getPAY_22() <= 0 ||
                 persona.getPAY_23() <= 0 ||
                 persona.getPAY_24() <= 0 ||
                 persona.getPAY_25() <= 0 ||
                 persona.getPAY_26() <= 0) {
             return true;
-        }*//*
-
-        if (Integer.parseInt(persona.getPAY_1()) <= 0 ||
-                Integer.parseInt(persona.getPAY_22()) <= 0 ||
-                Integer.parseInt(persona.getPAY_23()) <= 0 ||
-                Integer.parseInt(persona.getPAY_24()) <= 0 ||
-                Integer.parseInt(persona.getPAY_25()) <= 0 ||
-                Integer.parseInt(persona.getPAY_26()) <= 0) {
-            return true;
         }
         return false;
     }
     public static boolean isAnyBillLessOrEqualZero(Persona persona) {
-        if (Integer.parseInt(persona.getBILL_1()) <= 0 ||
-                Integer.parseInt(persona.getBILL_2()) <= 0 ||
-                        Integer.parseInt(persona.getBILL_3()) <= 0 ||
-                                Integer.parseInt(persona.getBILL_4()) <= 0 ||
-                                        Integer.parseInt(persona.getBILL_5()) <= 0 ||
-                                                Integer.parseInt(persona.getBILL_6()) <= 0) {
+        if (persona.getBILL_1() <= 0 ||
+                persona.getBILL_2() <= 0 ||
+                persona.getBILL_3() <= 0 ||
+                persona.getBILL_4() <= 0 ||
+                persona.getBILL_5() <= 0 ||
+                persona.getBILL_6() <= 0) {
             return true;
         }
         return false;
     }
 }
-*/

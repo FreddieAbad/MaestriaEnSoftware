@@ -1,4 +1,3 @@
-/*
 package org.apache.camel.learn;
 
 import org.apache.camel.CamelContext;
@@ -30,8 +29,7 @@ public class PersonaProcesor23 implements Processor {
         }
     }
 
-    */
-/*public static void conexion2DB() {
+    /*public static void conexion2DB() {
         String urljdbc = "jdbc:postgresql://localhost:5432/postgres";
         DataSource dataSource = setupDatasource(urljdbc);
         DefaultRegistry registry = new DefaultRegistry();
@@ -50,8 +48,7 @@ public class PersonaProcesor23 implements Processor {
             throw new RuntimeException(e);
         }
         context.stop();
-    }*//*
-
+    }*/
     public static void conexion2DB(Persona persona) {
         String urljdbc = "jdbc:postgresql://localhost:5432/postgres";
         DataSource dataSource = setupDatasource(urljdbc);
@@ -100,8 +97,7 @@ public class PersonaProcesor23 implements Processor {
     }
 
 
-    */
-/*private void configureDataSource(Exchange exchange) {
+    /*private void configureDataSource(Exchange exchange) {
         dataSource = new BasicDataSource();
         dataSource.setDriverClassName("org.postgresql.Driver");
         dataSource.setUrl("jdbc:postgresql://localhost:5432/postgres");
@@ -153,8 +149,7 @@ public class PersonaProcesor23 implements Processor {
             System.err.println("Error al insertar persona: " + e.getMessage());
             e.printStackTrace();
         }
-    }*//*
-
+    }*/
 
 
     public static boolean isAnyPayLessOrEqualZero(Persona persona) {
@@ -183,4 +178,3 @@ public class PersonaProcesor23 implements Processor {
 
 
 }
-*/
